@@ -1,0 +1,249 @@
+question,expected_answer,gold_source,agent_response,agent_source,match_answer,match_source,token_f1,edit_ratio,domain_match
+What are alternative investments?,"Assets outside traditional stocks and bonds, such as real estate, commodities, hedge funds, and private equity.",Alternative Investments p2,"**Alternative Investments** refer to a broad category of investment strategies that fall outside of traditional asset classes such as public equities and investment-grade bonds. Initially popular among university endowments and wealthy families, these investments have gained acceptance by institutional investors like public pensions and sovereign wealth funds. The common types of alternative investments include:
+
+- **Hedge Funds**
+- **Private Equity**
+- **Private Credit**
+- **Venture Capital**
+- **Real Estate**
+- **Infrastructure**
+- **Commodities**
+- **Blockchain-native assets**
+
+These investments are typically characterized by their potential to offer differentiated returns and lower correlation with traditional markets, which can help in reducing portfolio volatility. However, they also come with challenges such as illiquidity, opacity, higher fees, and variable manager skill levels, making them complex and sometimes risky additions to a portfolio.",Alternative Investments.pdf p1,0,0,0.08620689655172413,0.14869888475836432,1
+How do annuities work in retirement planning?,Contracts with insurers guaranteeing periodic payments in exchange for an upfront premium.,Annuities p5,"Annuities play a significant role in retirement planning by converting wealth into a stream of regular payments. At their core, they are contracts that provide guaranteed income, helping individuals manage the financial risks associated with retirement, particularly longevity risk—the risk of outliving one's savings.
+
+### Key Features of Annuities:
+
+1. **Income Stream**: Annuities provide a reliable source of income, which can be especially important in retirement. This can be structured as lifetime payments to ensure that individuals have a steady income for as long as they live.
+
+2. **Investment Choices**: Modern annuities offer various investment options, allowing individuals to select how their contributions are allocated, balancing risk and potential return.
+
+3. **Tax Deferral**: Annuities allow for tax deferral on the earnings until withdrawals are made, which can be beneficial for investment strategies that involve high turnover or actively managed funds.
+
+4. **Guarantees**: An insurance element is integrated into annuities, which can provide various guarantees such as income guarantees for a specified period or for life, offering peace of mind in financial planning.
+
+### Recent Trends:
+
+The SECURE 2.0 Act of 2022 has made it easier for employers to offer annuities in retirement plans, encouraging the inclusion of guaranteed income in individuals' retirement strategies. Economic factors, such as low bond yields and market volatility, have also renewed interest in annuities.
+
+A common strategy involves using annuities to cover essential expenses alongside other retirement income sources like Social Security, while investing surplus funds in diversified portfolios to secure discretionary spending and legacy goals.
+
+In summary, annuities serve as a financial tool in retirement planning by transforming a lump sum of money into ongoing income, thus aiding in effective management of retirement finances.",Annuities.pdf p1,0,0,0.06030150753768845,0.0651208682782437,1
+What is the definition of capital gains?,Profit from selling an asset for more than its purchase price.,Capital Gains p4,"**Definition of Capital Gains:**
+
+Capital gains refer to the profit that arises when you sell a capital asset for more than its adjusted basis, which includes the original cost plus any improvements, reinvested dividends, commissions, and certain taxes. The classification of these gains can be affected by how long the asset is held; if sold after one year and a day, the profit is considered long-term, whereas selling it sooner would classify it as short-term, which is taxed at rates similar to ordinary income.",Capital Gains.pdf p1,0,0,0.17948717948717952,0.18024263431542462,1
+What factors influence credit score management?,"Payment history, credit utilization, length of credit history, new credit inquiries, and credit mix.",Credit Score Management p3,"Several factors influence credit score management, which is essential for determining an individual's creditworthiness:
+
+1. **Credit Models**: The two dominant credit scoring models in the U.S. are the FICO Score and VantageScore, operating on scales from 300 to 850. Each model has its unique calibration methods and factors that it emphasizes differently.
+
+2. **Credit Utilization**: This refers to the ratio of current credit card balances to credit limits. Lower utilization rates typically have a positive impact on credit scores.
+
+3. **Credit History Length**: The duration of credit history affects scores. Opening accounts like secured credit cards can help build this history over time.
+
+4. **Types of Credit Accounts**: A mix of different types of credit accounts (credit cards, installment loans) can enhance a credit score.
+
+5. **Payment History**: Late payments and defaults negatively impact credit scores, while timely payments contribute positively.
+
+6. **Hard Inquiries**: A hard inquiry occurs when a lender checks your credit in response to your application for credit. This can lower your credit score temporarily.
+
+7. **Fraud Management**: Identity theft can distort credit scores. Measures such as placing fraud alerts or freezes can protect score integrity.
+
+8. **Economic Factors**: Credit scores can fluctuate due to broader economic conditions, such as recessions that increase delinquency rates or stimulus measures that improve overall financial stability.
+
+9. **Regulatory Considerations**: Laws like the Fair Credit Reporting Act (FCRA) affect consumers' rights regarding the management of credit reports and disputing inaccuracies.
+
+Overall, successful credit score management combines understanding these factors and actively working to maintain a healthy credit profile.",Credit Score Management.pdf p1,0,0,0.0320855614973262,0.09458749343142407,1
+What is diversification and why is it important?,Spreading investments across asset classes to reduce risk and volatility.,Diversification p2,"Diversification is the deliberate strategy of holding two or more assets that do not behave the same way simultaneously. This means that when one asset decreases in value, another may increase, which helps smooth the overall investment experience. The primary purpose of diversification is to increase the likelihood of maintaining an investment long enough to benefit from compounding returns. The popular adage ""Don’t put all your eggs in one basket"" encapsulates this principle. 
+
+Moreover, diversification is important because it reduces the risk associated with individual investments. A well-diversified portfolio can withstand different economic conditions since various asset types, like stocks, bonds, and cash, react differently to economic cycles, interest rate changes, and company events. Historical research has shown that a diversified investment portfolio typically presents lower volatility and risk compared to holding a concentrated position in a single asset.
+
+In summary, diversification minimizes risks while maximizing potential returns, making it a crucial aspect of a successful investment strategy.",Diversification.pdf p1,0,0,0.0625,0.0885547201336675,1
+Explain dollar cost averaging.,Investing fixed amounts regularly regardless of market price to lower average cost per share.,Dollar Cost Averaging p3,"**Dollar Cost Averaging (DCA)** is a financial investment strategy that involves committing a fixed amount of capital at regular intervals, regardless of the current market price of the asset. The key aspects of DCA can be summarized as follows:
+
+- **Investment Distribution**: An investor has a total capital amount, denoted as \( K \), which is divided into \( n \) equal installments, each of size \( A = K/n \).
+- **Purchase Dynamics**: At each investment interval \( t \), the asset's price is \( P_t \). The number of units acquired in each interval is determined by the formula \( A/P_t \).
+- **Cost Averaging**: Over multiple intervals, the total units purchased are summed up, resulting in an average acquisition cost calculated as \( (n \cdot A)/(\Sigma A/P_t) \).
+
+**Benefits of Dollar Cost Averaging**:
+- It minimizes the risks associated with market timing, as investments are spread out over time.
+- DCA tends to reduce the impact of volatility, making it especially suitable for investors who are averse to losses or who have shorter investment horizons.
+- In markets with higher volatility or during downturns, DCA can lead to better long-term outcomes compared to making a lump-sum investment.
+
+Overall, while it's not a technique designed for maximizing returns, DCA serves as a practical method to mitigate risks associated with sudden market drops, offering a sort of insurance for investors against unfavorable market conditions.",Dollar Cost Averaging.pdf p1,0,0,0.09876543209876544,0.11535968891769281,1
+What are the key components of estate planning?,"Wills, trusts, power of attorney, healthcare directives, and beneficiary designations.",Estate Planning p6,"The key components of estate planning typically include the following elements:
+
+1. **Will**: A legal document that specifies how a person's assets and affairs should be handled after their death.
+
+2. **Trusts**: Establishing trusts to manage and distribute assets, which can provide tax benefits and reduce estate taxes.
+
+3. **Power of Attorney**: Designating an individual to make financial and legal decisions on one's behalf in case of incapacitation.
+
+4. **Healthcare Proxy**: Appointing someone to make medical decisions if one becomes unable to do so.
+
+5. **Beneficiary Designations**: Specifying beneficiaries for financial accounts, retirement plans, and insurance policies.
+
+6. **Guardianship Designations**: Choosing guardians for minor children to ensure they are taken care of according to the individual's wishes.
+
+7. **Property Ownership**: Outlining how properties will be owned and whether they will be part of the estate.
+
+8. **Funeral and Burial Instructions**: Providing guidance on personal preferences regarding end-of-life arrangements.
+
+9. **Digital Assets**: Planning for online accounts and digital assets to ensure they are managed according to one's wishes.
+
+10. **Regular Reviews and Updates**: Ensuring the estate plan is regularly reviewed and updated to accommodate any changes in personal circumstances or laws.
+
+These components help in ensuring that a person's wishes are honored, their assets are distributed according to their desires, and their loved ones are taken care of after their passing.",https://www.investopedia.com/terms/e/estateplanning.asp,0,0,0.02531645569620253,0.09023485784919653,0
+What does fiduciary duty mean for financial advisors?,Legal obligation to act in clients' best interests with loyalty and care.,Fiduciary Duty p2,"Fiduciary duty for financial advisors is a key principle that governs their relationship with clients, requiring them to prioritize their clients' interests above their own. It is composed of two main pillars:
+
+1. **Duty of Loyalty**: Financial advisors must ensure that their recommendations do not conflict with the interests of their clients. Any potential conflicts, such as revenue-sharing arrangements or compensation tied to transaction volume, must be either eliminated or disclosed clearly so that clients can understand them.
+
+2. **Duty of Care**: Advisors are obligated to make reasonable recommendations that align with the client's individual goals, risk tolerance, investment horizon, and other preferences. This includes conducting thorough due diligence on investment options and maintaining appropriate oversight based on the product's complexity and risk.
+
+Additionally, fiduciary status is established when advisors receive compensation for investment recommendations, create a trust-based perception with clients, and either foresee a continuing relationship or base significant investment decisions on their advice. When fiduciary status is triggered, advisors must act with the same level of care, skill, prudence, and diligence expected of a knowledgeable professional.",Fiduciary Duty.pdf p1,0,0,0.0916030534351145,0.08058608058608059,1
+What is financial planning?,"Process of setting goals, managing resources, and planning for future financial needs.",Financial Planning p1,"Financial planning is the practice of organizing your financial resources—including cash flows, assets, liabilities, and human capital—to effectively achieve your life goals. These goals may include retirement income, funding children's education, philanthropy, or taking a sabbatical. The measure of success is not merely outperforming benchmarks, but rather the ability to fund the predefined goals within acceptable levels of risk.
+
+The process typically follows a classical six-step framework:
+
+1. **Establish the relationship** – Clarify fiduciary duty and fee model.
+2. **Gather data** – Collect information on income, expenses, assets, debts, insurance, and taxes.
+3. **Define goals** – Set specific, measurable, and time-bound goals.
+4. **Analyze and evaluate** – Project cash flows and explore alternative scenarios.
+5. **Present recommendations** – Create an action list ordered by impact and cost.
+6. **Implement and monitor** – Automate tasks where possible and revisit the plan annually or during significant life changes.
+
+Financial planning helps ensure that resources are allocated efficiently to meet life objectives.",Financial Planning.pdf p1,0,0,0.07407407407407408,0.06393442622950819,1
+What defines a hedge fund?,Private pooled investment fund using diverse strategies including leverage and derivatives.,Hedge Funds p4,"A hedge fund is a pooled investment fund that employs a variety of strategies to earn high returns for its investors. Hedge funds can invest in a wide range of assets and may use techniques such as leveraging, short selling, and derivatives to enhance their performance and manage risk. 
+
+Key characteristics of hedge funds include:
+
+1. **Accredited Investors**: Hedge funds typically require a significant minimum investment and are often restricted to accredited investors (such as wealthy individuals and institutional investors).
+
+2. **Flexibility in Investment Strategies**: Hedge funds can employ diverse strategies, including long/short equity, market neutral, global macro, and event-driven strategies.
+
+3. **Limited Regulation**: Compared to mutual funds, hedge funds have less regulatory oversight, allowing them more flexibility in their investment approach and operational practices.
+
+4. **Fee Structure**: They often charge both a management fee and a performance fee, commonly referred to as the ""2 and 20"" model (2% management fee and 20% performance fee).
+
+5. **Goal of Absolute Returns**: Hedge funds aim to achieve positive returns regardless of market conditions, unlike many traditional investment funds that may benchmark their performance against the broader market.
+
+Overall, hedge funds are characterized by their pursuit of high returns through innovative and flexible investment strategies, making them distinct from more conventional investment vehicles.",https://www.investopedia.com/terms/h/hedgefund.asp,0,0,0.09395973154362418,0.10941475826972011,0
+What is inflation risk?,The danger that inflation will erode the real value of returns.,Inflation Risk p3,"**Inflation Risk**
+
+Inflation risk refers to the probability-weighted loss of purchasing power that occurs when future general price levels exceed what was anticipated in nominal asset prices. This risk significantly affects various asset classes:
+
+- **Bonds** with fixed interest rates face a direct impact due to lower real yields.
+- **Equities** can suffer as unexpected inflation compresses valuation multiples and raises discount rates, decreasing overall valuations.
+- **Cash** holdings experience an immediate and eroding effect on real terms.
+
+Historically, inflation rates vary, with advanced economies experiencing an average of 3.6% inflation from 1960 to 2024, with note-worthy spikes in certain decades, such as an average of 7.1% in the 1970s. 
+
+Inflation risk can erode real returns, widen funding gaps, and distort asset correlations. There are both direct and indirect hedging strategies available to mitigate this risk. Direct hedges, like Treasury Inflation-Protected Securities (TIPS) and swaps, aim to neutralize unexpected inflation, while indirect hedges, including commodities and real assets, help to soften the impact of inflation.
+
+*Source: Inflation Risk.pdf p1*",,0,0,0.09022556390977443,0.07661612130885874,0
+What is an IRA?,Individual Retirement Account offering tax advantages for retirement savings.,IRA p2,"An **Individual Retirement Account (IRA)** is a personal savings vehicle established by U.S. tax law that allows individuals to set aside money for retirement. There are two primary types of IRAs:
+
+1. **Traditional IRA**: Contributions can be made with pre-tax dollars, and the earnings grow tax-deferred. Withdrawals are taxed as income, and required minimum distributions (RMDs) start at age 73.
+
+2. **Roth IRA**: Funded with after-tax dollars, qualified withdrawals are tax-free after five years and when the account holder is at least 59½ years old. Unlike Traditional IRAs, Roth IRAs do not have lifetime RMDs for the original owner.
+
+Additionally, there are other types of IRAs, such as Rollover IRAs (for transferring funds from employer plans), SEP IRAs (for small business owners), and SIMPLE IRAs (for small businesses with a straightforward employee contribution plan). For 2025, the contribution limit across all IRAs is $7,000, or $8,000 for individuals aged 50 and older. 
+
+The IRA was first authorized in 1974 to help supplement employer pensions and Social Security.",IRA.pdf p1,0,0,0.06015037593984962,0.11389128559102675,1
+What does liquidity refer to in finance?,Ease of converting assets to cash without significant value loss.,Liquidity p2,"In finance, **liquidity** refers to how quickly and easily an asset can be converted into cash without significantly impacting its price. Market participants assess liquidity based on three measurable dimensions:
+
+1. **Bid–Ask Spread:** This is the difference between the price a seller is willing to accept and the price a buyer is willing to pay. A smaller spread indicates higher liquidity.
+2. **Market Depth:** This refers to the volume of orders at various price levels, indicating how much of an asset can be bought or sold without causing a price change.
+3. **Market Resiliency:** This describes how quickly prices recover after a transaction, reflecting the market's ability to absorb trades without significant price fluctuations.
+
+For example, U.S. large-cap equities typically trade with a bid-ask spread of 1–3 basis points under normal conditions, while emerging-market bonds might show wider spreads due to higher transaction costs and liquidity risk.",Liquidity.pdf p1,0,0,0.08620689655172414,0.10097087378640776,1
+What are mutual funds?,Investment vehicles pooling money from many investors to buy diversified portfolios.,Mutual Funds p3,"A **mutual fund** is essentially a pool of money collected from multiple investors, which is then managed by professionals. The funds are typically invested according to a specific strategy—such as large-cap stocks, global bonds, or money markets. Each investor holds shares in the mutual fund, and the value of these shares fluctuates based on the net asset value (NAV) of the fund's underlying portfolio.
+
+Mutual funds offer several advantages:
+
+- **Diversification**: Small contributions from many investors allow for diversification across various assets, thereby reducing risk.
+- **Liquidity**: Investors can typically buy or sell shares on any given day at the current NAV.
+- **Professional Management**: The investments are overseen by skilled management teams.
+
+Most mutual funds are categorized as open-end funds, which means they can create or redeem shares each day based on investor demand. There are also closed-end funds, which issue a limited number of shares and are traded on exchanges, often at prices that differ from their NAV.
+
+In addition to these basic structures, mutual funds may have different share classes, which can carry different fees or expense ratios.",Mutual Funds.pdf p1,0,0,0.0909090909090909,0.09936908517350158,1
+How is net worth calculated?,Total assets minus total liabilities at a given point in time.,Net Worth p2,"Net worth is calculated by subtracting total liabilities (what you owe) from total assets (what you own). The basic formula is:
+
+**Net Worth = Assets - Liabilities**
+
+Here's a breakdown of the components:
+
+1. **Assets**: This includes all valuable items you own, which might include:
+   - **Cash**: Funds available in bank accounts.
+   - **Marketable Securities**: Stocks, bonds, and mutual funds that can be easily traded.
+   - **Real Estate**: The market value of any properties you own.
+   - **Retirement Accounts**: The current market value of retirement funds, despite any tax implications.
+
+2. **Liabilities**: This includes all debts and obligations, such as:
+   - **Mortgages**: Loans taken out to purchase property.
+   - **Credit Card Debt**: Outstanding balances owed to credit card companies.
+   - **Loans**: Any other personal loans or debts.
+
+The concept of net worth goes beyond simple arithmetic, as it also involves considerations of valuation, liquidity, and individual financial planning. Monitoring your net worth regularly can provide insights into your overall financial health and help with long-term decision-making.",Net Worth.pdf p1,0,0,0.07518796992481203,0.07993338884263114,1
+What is rebalancing?,Periodic adjustment of portfolio back to target asset allocation.,Rebalancing p3,"Rebalancing refers to the process of realigning the proportions of assets in an investment portfolio. It involves periodically buying or selling assets to maintain a desired level of asset allocation or risk. Over time, due to varying returns, the original allocation can drift, requiring adjustments to keep the portfolio aligned with the investor's goals.
+
+Rebalancing is important because it helps manage risk and ensures that the portfolio remains in line with the intended investment strategy. It can be executed in various ways, including on a time schedule (e.g., quarterly or annually) or based on market conditions when asset values shift significantly.",https://www.investopedia.com/terms/r/rebalancing.asp,0,0,0.0975609756097561,0.1375515818431912,0
+What is retirement planning?,Process of determining retirement income goals and managing assets to meet them.,Retirement Planning p4,"Retirement planning is the process of aligning future cash-flow needs with available and projected resources to ensure lifetime financial security. The primary objectives include maintaining desired living standards, addressing healthcare costs, and allowing for flexibility to manage unforeseen events. 
+
+Key components of retirement planning involve:
+
+1. **Defining Retirement Objectives**: This includes identifying how much income will be necessary to sustain a certain lifestyle during retirement, forecasting expenses, and layering income streams.
+
+2. **Setting a Target Age and Lifestyle**: Establishing a vision for retirement—such as the target age, preferred location, daily activities, and travel plans—helps inform the quantitative aspects like housing costs and health insurance premiums.
+
+3. **Stress-testing the Plan**: One common method is using Monte Carlo simulations to forecast different financial scenarios based on variables like equity returns, inflation, and longevity. This helps ensure a high probability of success in the plan.
+
+4. **Actionable Steps**: These might include completing a retirement-budget worksheet, reviewing Social Security statements, and assessing all retirement accounts and their associated fees.
+
+In summary, effective retirement planning involves a comprehensive approach to ensure that financial resources will meet desired retirement goals.",Retirement Planning.pdf p1,0,0,0.09333333333333334,0.09911744738628649,1
+What is risk tolerance?,Investor's ability and willingness to endure market volatility.,Risk Tolerance p2,"**Risk Tolerance** refers to the psychological and financial ability to withstand fluctuations in the value of investments without abandoning a chosen investment strategy. It is typically defined in terms of comfort with the potential for sharp ups and downs in exchange for possible long-term gains. A significant aspect of risk tolerance involves the relationship between one's emotional response to loss, known as attitude, and the individual's financial capacity and investment horizon.
+
+Risk tolerance can vary widely among individuals; those who possess a higher capacity for risk, usually due to more stable income or a longer investment horizon, may be able to handle more volatility in their investment portfolios. It is important to distinguish risk tolerance from risk perception, as the former represents an underlying preference that remains more stable over time, while the latter can fluctuate based on market conditions and emotional responses.
+
+In summary, understanding risk tolerance is essential for effective financial planning, ensuring that an investor's portfolio matches their comfort level with risk.",Risk Tolerance.pdf p1,0,0,0.08403361344537814,0.09251471825063078,1
+What are stocks and bonds?,Stocks are equity shares in companies; bonds are debt securities issued by corporations or governments.,Stocks and Bonds p1,"**Stocks and Bonds Explained**
+
+- **Stocks** (or shares) represent an ownership interest in a company. When you own a stock, you have a claim on part of the company's assets and earnings. Shareholders can benefit from price appreciation and may also receive cash dividends when declared. However, in the event of a company’s liquidation, stockholders are last in line for any remaining assets.
+
+- **Bonds**, on the other hand, are a form of loan that is turned into a tradable security. When you buy a bond, you are essentially lending money to the issuer, which could be a government or a corporation. The issuer agrees to repay the principal amount on a specified maturity date and pays interest (known as the coupon) at regular intervals. In terms of claim hierarchy in bankruptcy, bondholders have a higher priority than stockholders.
+
+**Key Differences**:
+- **Risk and Return**: Stocks can offer higher returns through capital appreciation and dividends but come with greater risk of loss, especially during economic downturns. Bonds generally provide more stable, but lower, returns.
+- **Ownership vs Lending**: Stocks indicate ownership in a company, while bonds represent a loan to that company or government.
+
+**Summary**: 
+- **Stocks = Ownership**
+- **Bonds = Lending**",Stocks and Bonds.pdf p1,0,0,0.0662251655629139,0.09840810419681621,1
+What is tax planning?,Strategic arrangement of financial affairs to minimize tax liabilities.,Tax Planning p2,"Tax planning is a strategic process aimed at optimizing the timing, character, and location of income and deductions to maximize after-tax wealth over a lifetime, while adhering to legal regulations. It plays a crucial role in retaining wealth by minimizing tax liabilities and avoiding unnecessary penalties. Here are some core components of tax planning:
+
+- **Tax Brackets**: Understanding progressive marginal rates that apply to taxable income.
+- **Filing Status**: Choosing the correct status, such as single, married filing jointly, or head of household.
+- **Deductions**: Utilizing above-the-line deductions to reduce adjusted gross income (AGI). Examples include contributions to Health Savings Accounts (HSA), traditional IRA deductions, and student-loan interest.
+- **Standard vs. Itemized Deductions**: Deciding between the two to maximize deductions.
+- **Tax Credits**: Applying dollar-for-dollar offsets such as child tax credits or education credits.
+
+Overall, effective tax planning is essential for managing your financial future and safeguarding your assets.",Tax Planning.pdf p1,0,0,0.08064516129032258,0.09947643979057591,1
+Who is the current Chair of the Federal Reserve?,Jerome Powell,https://www.federalreserve.gov,The current Chair of the Federal Reserve is Jerome H. Powell.,https://www.federalreserve.gov/aboutthefed/bios/board/powell.htm,0,0,0.16666666666666669,0.35135135135135137,1
+What is the current federal funds rate in the United States?,5.25%,https://www.federalreserve.gov/monetarypolicy/fomc.htm,The current federal funds rate in the United States is 5.60 percent.,Mutual Funds.pdf p6,0,0,0.0,0.0547945205479452,0
+What is the current price of gold per ounce?,"$1,930",https://www.kitco.com,"The current price of gold per ounce can be found on various financial websites. Some of the recommended sources include:
+
+- [APMEX](https://www.apmex.com/gold-price)
+- [Monex](https://www.monex.com/gold-prices)
+- [BullionVault](https://www.bullionvault.com/gold-price-chart.do)
+- [JM Bullion](https://www.jmbullion.com/charts/gold-price/)
+- [Gold Price](https://goldprice.org/gold-price.html)
+
+For the most up-to-date figures, please check one of these links.",Net Worth.pdf p2 & https://www.apmex.com/gold-price,0,0,0.0,0.004301075268817204,0
+What was the inflation rate in the US for 2023?,3.4%,https://www.bls.gov,"In 2023, the inflation rate in the U.S. rose to 12%, marking a significant increase. This rise followed a period where the Consumer Price Index (CPI) had already breached 9% year-over-year in June 2022, the highest rate since 1981.",Inflation Risk.pdf p1,0,0,0.0,0.02553191489361702,0
+What is the current exchange rate of USD to EUR?,1 USD = 0.91 EUR,https://www.xe.com,"I'm sorry, but I couldn't retrieve the current exchange rate of USD to EUR. You might want to check a reliable financial news website or a currency conversion tool for the latest rates.",Liquidity.pdf p6,0,0,0.05714285714285715,0.08955223880597014,0
+Who is the CEO of BlackRock?,Larry Fink,https://www.blackrock.com,"The CEO of BlackRock is **Larry Fink**. 
+
+For more information, you can visit his [Wikipedia page](https://en.wikipedia.org/wiki/Larry_Fink).",https://en.wikipedia.org/wiki/Larry_Fink,0,0,0.0,0.13245033112582782,0
+What is the market capitalization of Apple Inc.?,$2.7 trillion,https://www.google.com/finance,I couldn't find specific information on the current market capitalization of Apple Inc. Please check a financial news source or stock market website for the most up-to-date data.,Stocks and Bonds.pdf p1,0,0,0.0,0.05235602094240838,0
+What is the largest stock exchange by market cap?,New York Stock Exchange (NYSE),https://www.nyse.com,"The information retrieved does not directly answer the question about the largest stock exchange by market capitalization. However, based on my knowledge, the largest stock exchange in the world by market capitalization is the **New York Stock Exchange (NYSE)**.",Trust Fund.pdf p2,0,0,0.18750000000000003,0.2054794520547945,0
