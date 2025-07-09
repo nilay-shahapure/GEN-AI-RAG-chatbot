@@ -36,58 +36,99 @@ def pdf_search(query: str, k: int = 4) -> str:
         for j, idx in enumerate(I[0])
     )
 
-# ─── DuckDuckGo Web search tool ─────────────────────────────────────
+
 
 from itertools import islice
 
-from duckduckgo_search import DDGS         
+from serpapi import GoogleSearch
+import os
+from typing import Tuple
 
-def web_search(query: str, k: int = 5) -> tuple[str, str | None]:
+SERPAPI_KEY = os.getenv("SERPAPI_KEY")
+
+def web_search(query: str, k: int = 5) -> Tuple[str, str | None]:
     """
-    Uses DuckDuckGo Instant-Answer JSON API (no key, no ratelimit).
-    Returns (joined_context, first_url_or_None)
+    Uses SerpAPI (Google) to fetch up to k organic results.
+    Returns (context_lines, first_url).
     """
-    api = (
-        "https://api.duckduckgo.com/"
-        f"?q={urllib.parse.quote_plus(query)}"
-        "&format=json&no_redirect=1&no_html=1&skip_disambig=1"
-    )
+    if not SERPAPI_KEY:
+        return "[SerpAPI key not set]", None
+
+    params = {
+        "q": query,
+        "engine": "google",
+        "api_key": SERPAPI_KEY,
+        "num": k,
+    }
     try:
-        data = requests.get(api, timeout=8).json()
-    except Exception:
+        search = GoogleSearch(params)
+        results = search.get_dict().get("organic_results", [])
+    except Exception as e:
         return "[Web search failed]", None
 
-    hits: list[dict] = []
-
-    # 1) AbstractURL is DDG's primary answer (often Wikipedia)
-    if data.get("AbstractURL"):
-        hits.append({"title": data.get("Heading") or query,
-                     "href":  data["AbstractURL"]})
-
-    # 2) RelatedTopics list
-    for item in data.get("RelatedTopics", []):
-        # can be a topic or a group of topics
-        if "FirstURL" in item:
-            hits.append({"title": item.get("Text"), "href": item["FirstURL"]})
-        elif "Topics" in item:
-            for sub in item["Topics"]:
-                if "FirstURL" in sub:
-                    hits.append({"title": sub.get("Text"), "href": sub["FirstURL"]})
-        if len(hits) >= k:
-            break
-
-    if not hits:
+    if not results:
         return "[No web results]", None
 
-    # build context string
-    ctx = "\n".join(f"{h['title']}: {h['href']}" for h in hits)
+    # Build context: "Title: URL"
+    lines = []
+    for item in results[:k]:
+        title = item.get("title", "").strip()
+        link  = item.get("link", "").strip()
+        if title and link:
+            lines.append(f"{title}: {link}")
 
-    # normalise first URL
-    url = hits[0]["href"]
-    if not url.startswith(("http://", "https://")):
-        url = "https://" + url.lstrip("/")
+    context   = "\n".join(lines) or "[No web results]"
+    first_url = results[0].get("link") if results else None
 
-    return ctx, url
+    return context, first_url
+
+
+# def web_search(query: str, k: int = 5) -> tuple[str, str | None]:
+#     """
+#     Uses DuckDuckGo Instant-Answer JSON API (no key, no ratelimit).
+#     Returns (joined_context, first_url_or_None)
+#     """
+#     api = (
+#         "https://api.duckduckgo.com/"
+#         f"?q={urllib.parse.quote_plus(query)}"
+#         "&format=json&no_redirect=1&no_html=1&skip_disambig=1"
+#     )
+#     try:
+#         data = requests.get(api, timeout=8).json()
+#     except Exception:
+#         return "[Web search failed]", None
+
+#     hits: list[dict] = []
+
+#     # 1) AbstractURL is DDG's primary answer (often Wikipedia)
+#     if data.get("AbstractURL"):
+#         hits.append({"title": data.get("Heading") or query,
+#                      "href":  data["AbstractURL"]})
+
+#     # 2) RelatedTopics list
+#     for item in data.get("RelatedTopics", []):
+#         # can be a topic or a group of topics
+#         if "FirstURL" in item:
+#             hits.append({"title": item.get("Text"), "href": item["FirstURL"]})
+#         elif "Topics" in item:
+#             for sub in item["Topics"]:
+#                 if "FirstURL" in sub:
+#                     hits.append({"title": sub.get("Text"), "href": sub["FirstURL"]})
+#         if len(hits) >= k:
+#             break
+
+#     if not hits:
+#         return "[No web results]", None
+
+#     # build context string
+#     ctx = "\n".join(f"{h['title']}: {h['href']}" for h in hits)
+
+#     # normalise first URL
+#     url = hits[0]["href"]
+#     if not url.startswith(("http://", "https://")):
+#         url = "https://" + url.lstrip("/")
+
+#     return ctx, url
 
 
 
